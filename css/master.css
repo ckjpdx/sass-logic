@@ -1,0 +1,126 @@
+.color-box.mint {
+  background: #d9f5e8; }
+
+.mint ~ .grid-vert .mix-mint {
+  background: #d9f5e8; }
+
+.mint ~ .grid-vert .mix-teal {
+  background: #88e0d5; }
+
+.mint ~ .grid-vert .mix-gold {
+  background: #ecd88e; }
+
+.mint ~ .grid-vert .mix-tomato {
+  background: #ecac98; }
+
+.color1.mint {
+  background: #e3fff2; }
+
+.color2.mint {
+  background: #d9f5e8; }
+
+.color3.mint {
+  background: #cfebde; }
+
+.color-box.teal {
+  background: #37cbc2; }
+
+.teal ~ .grid-vert .mix-mint {
+  background: #88e0d5; }
+
+.teal ~ .grid-vert .mix-teal {
+  background: #37cbc2; }
+
+.teal ~ .grid-vert .mix-gold {
+  background: #9bc37b; }
+
+.teal ~ .grid-vert .mix-tomato {
+  background: #9b9785; }
+
+.color1.teal {
+  background: #41d5cc; }
+
+.color2.teal {
+  background: #37cbc2; }
+
+.color3.teal {
+  background: #2dc1b8; }
+
+.color-box.gold {
+  background: #ffbb33; }
+
+.gold ~ .grid-vert .mix-mint {
+  background: #ecd88e; }
+
+.gold ~ .grid-vert .mix-teal {
+  background: #9bc37b; }
+
+.gold ~ .grid-vert .mix-gold {
+  background: #ffbb33; }
+
+.gold ~ .grid-vert .mix-tomato {
+  background: #ff8f3d; }
+
+.color1.gold {
+  background: #ffc53d; }
+
+.color2.gold {
+  background: #ffbb33; }
+
+.color3.gold {
+  background: #f5b129; }
+
+.color-box.tomato {
+  background: tomato; }
+
+.tomato ~ .grid-vert .mix-mint {
+  background: #ecac98; }
+
+.tomato ~ .grid-vert .mix-teal {
+  background: #9b9785; }
+
+.tomato ~ .grid-vert .mix-gold {
+  background: #ff8f3d; }
+
+.tomato ~ .grid-vert .mix-tomato {
+  background: tomato; }
+
+.color1.tomato {
+  background: #ff6d51; }
+
+.color2.tomato {
+  background: tomato; }
+
+.color3.tomato {
+  background: #f5593d; }
+
+h5 {
+  margin: 0; }
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px; }
+
+.color-box.tri-color {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.color-box.tri-color div {
+  height: 100px; }
+
+.color-box {
+  height: 100px; }
+
+.small-color {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-vert {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=master.css.map */

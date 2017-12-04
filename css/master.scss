@@ -1,0 +1,60 @@
+
+$colors:(
+  mint: rgb(217,245,232),
+  teal: rgb(55,203,194),
+  gold: rgb(255,187,51),
+  tomato: rgb(255,99,71)
+);
+$lightness:(
+  1: 10,
+  2: 0,
+  3: -10
+);
+
+@each $key, $value in $colors {
+  .color-box.#{$key} {
+    background: $value;
+  }
+  // mix colors
+  @each $key2, $value2 in $colors {
+    .#{$key} ~ .grid-vert .mix-#{$key2} {
+      background: mix($value, $value2, 50%)
+    }
+  }
+  // change lightness
+  @each $number, $val in $lightness {
+    .color#{$number}.#{$key}{
+      background: $value + $val
+    }
+  }
+}
+
+h5{
+  margin: 0;
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.color-box.tri-color {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.color-box.tri-color div {
+    height: 100px;
+}
+.color-box{
+    height: 100px;
+}
+.small-color{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-vert {
+    display: grid;
+    grid-gap: 20px;
+    margin-top:20px
+}
